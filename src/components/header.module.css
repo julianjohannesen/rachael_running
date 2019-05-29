@@ -1,0 +1,13 @@
+.link {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.link:visited {}
+
+.link:hover {
+    border-bottom: 3px solid white;
+}
+
+.link:active{}

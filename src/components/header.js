@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import style from './header.module.css'
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -30,11 +32,11 @@ const Header = ({ siteTitle }) => (
 	</div>
 	
 	<nav>
-		<Link to="/">Home</Link>
-		<Link to="/about/">About Rachael</Link>
-		<Link to="/issues/">Issues</Link>
-		<Link to="/get-involved/">Get Involved</Link>
-		<Link to="/">DONATE</Link>
+		<Link className={style.link} to="/">Home</Link>
+		<Link className={style.link} to="/about/">About Rachael</Link>
+		<Link className={style.link} to="/issues/">Issues</Link>
+		<Link className={style.link} to="/get-involved/">Get Involved</Link>
+		<Link className={style.link} to="/">DONATE</Link>
 	</nav>
   </header>
 )
