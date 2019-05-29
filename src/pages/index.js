@@ -10,13 +10,12 @@ const IndexPage = () => (
     <SEO title="Home" />
    
     <p>I am Rachael Running and I am running for Malden School Committee in Ward 8. I am passionate about our city and our public schools. As a mother of two, I am dedicated to the success of our schools. When our children succeed, Malden succeeds.</p>
-    <p>Now go build something great.</p>
 
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
     
-    <Link to="/page-2/">About Rachael</Link>
+    <Link to="/about/">About Rachael</Link>
   </Layout>
 )
 
