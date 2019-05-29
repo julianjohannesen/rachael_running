@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+}
+
+.innerwrapper {
+    flex: 1;
+    padding: 2rem;
+}
+
+.footer {
+    flex-shrink: 0;
+    padding: 2rem;
+}

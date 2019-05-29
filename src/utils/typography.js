@@ -1,6 +1,6 @@
 import Typography from 'typography'
 import theme from 'typography-theme-fairy-gates'
-theme.baseFontSize = '17px'
+theme.baseFontSize = '18px'
 theme.overrideThemeStyles = ({ rhythm }, options) => ({
     'a': {
       textShadow: "none",
