@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="About Rachael" />
     <h1>Welcome</h1>
     
 		<p>I am excited to be running for Malden School Committee in Ward 8. My daughter, Willa, is in 1st grade at Linden and my son, Luca, will be entering kindergarten there this fall. For me, the success of our schools is personal. But no matter who we are or what issues we face, everyone in Malden is touched by our schools and we all know that when our children succeed, Malden succeeds.
