@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "rachael-for-malden",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "I am Rachael Running and I am running for Malden School Committee in Ward 8. I am passionate about our city and our public schools. As a mother of two, I am dedicated to the success of our schools. When our children succeed, Malden succeeds.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Rachael Running <rachaelrunning@gmail.com>",
   "dependencies": {
     "gatsby": "^2.7.3",
     "gatsby-image": "^2.1.1",
@@ -35,9 +35,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/julianjohannesen/rachael_running"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/julianjohannesen/rachael_running/issues"
   }
 }
