@@ -10,7 +10,7 @@ const GetInvolved = () => (
 		<h1>GET INVOLVED</h1>
 
 		<h3>Help make a difference for Malden</h3>
-		<p>We are looking for volunteers. Can you help? 
+		<p>We are looking for volunteers. Can you help? </p>
 		<ul>
 			<li>Knock doors</li>
 			<li>Make phone calls</li>
@@ -18,7 +18,7 @@ const GetInvolved = () => (
 		</ul>
 		<p>Together we can win for Malden!</p>
 
-		<p><Link to="/">Go back to the homepage</Link></p>
+		
   </Layout>
 )
 
