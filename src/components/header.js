@@ -2,13 +2,14 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Logo from './logo.js'
 import style from './header.module.css'
 
 const Header = ({ siteTitle }) => (
   <header className={style.header}>
-    <div>
+    <div className={style.logo}>
       <h1>
-        <Link to="/">{siteTitle}</Link>
+        <Link to="/"><Logo /></Link>
       </h1>
 	</div>
 	

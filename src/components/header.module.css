@@ -2,9 +2,15 @@
     display: flex;
     flex-flow: row wrap;
 
-    background: rebeccapurple;
+    background: #0080b2;
     
     margin-bottom: 1.45rem;
+}
+
+.logo {
+    width: 40vw;
+    min-width: 200px;
+    max-width: 400px;
 }
 
 .nav {
