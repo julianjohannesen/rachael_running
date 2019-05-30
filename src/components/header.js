@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
   <header className={style.header}>
     <div className={style.logo}>
       <h1>
-        <Link to="/"><Logo /></Link>
+        <Link className={style.titleLink} to="/"><Logo /></Link>
       </h1>
 	</div>
 	

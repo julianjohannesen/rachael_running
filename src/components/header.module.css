@@ -7,6 +7,10 @@
     margin-bottom: 1.45rem;
 }
 
+.titleLink, .titleLink:hover, .titleLink:active {
+    border: none;
+}
+
 .logo {
     width: 40vw;
     min-width: 200px;
@@ -34,10 +38,12 @@ a {
 
 }
 
-.link:visited {}
+a:visited {}
 
-.link:hover {
+a:hover {
     border-bottom: 3px solid white;
 }
 
-.link:active{}
+a:active{
+    border-bottom-color: #1190b7;
+}
