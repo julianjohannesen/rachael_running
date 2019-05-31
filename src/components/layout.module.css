@@ -1,14 +1,19 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    
+    margin: 0 auto;
     height: 100vh;
+    max-width: 960px;
 }
 
 .innerwrapper {
     flex: 1;
     padding: 2rem;
-    width: calc(100vw - (4vw + 2rem));
+    width: calc(100vw - (4% + 2rem));
+}
+
+main {
+    max-width: 960px;
 }
 
 .footer {

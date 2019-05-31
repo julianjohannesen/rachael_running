@@ -10,13 +10,13 @@ const IndexPage = () => (
 	<Layout>
 		<SEO title="Home" />
 		<div style={{ display: "flex", justifyContent: "space-between" }}>
-			<div>
-				<p style={{paddingRight: "1rem", width: "48vw" }}>I am Rachael Running and I am running for Malden School Committee in Ward 8. I am passionate about our city and our public schools. As a mother of two, I am dedicated to the success of our schools. When our children succeed, Malden succeeds.</p>
+			<div style={{width: "48%" }}>
+				<p style={{paddingRight: "1rem", }}>I am Rachael Running and I am running for Malden School Committee in Ward 8. I am passionate about our city and our public schools. As a mother of two, I am dedicated to the success of our schools. When our children succeed, Malden succeeds.</p>
 				<h2>Sign up for updates!</h2>
 				<ContactForm />
 			</div>
 
-			<div style={{ width: "48vw" }}>
+			<div style={{ width: "48%" }}>
 				<Image />
 			</div>
 
