@@ -8,6 +8,7 @@
 .innerwrapper {
     flex: 1;
     padding: 2rem;
+    width: calc(100vw - (4vw + 2rem));
 }
 
 .footer {

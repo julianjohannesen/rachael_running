@@ -12,6 +12,7 @@ theme.overrideThemeStyles = ({ rhythm }, options) => ({
     "h1,h2,h3,h4,h5,h6": {
       marginTop: `${rhythm(1.5)} !important`,
       marginBottom: `${rhythm(0.5)} !important`,
+      color: '#0e83cd',
     }
   })
 

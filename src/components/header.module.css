@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 
     background: #0080b2;
     
