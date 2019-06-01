@@ -1,19 +1,22 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    align-items: center;
+    background-color: #1190b7;
+
+    width: 100vw;
     height: 100vh;
-    max-width: 960px;
 }
 
 .innerwrapper {
+    /* sticky footer */
     flex: 1;
     padding: 2rem;
-    width: calc(100vw - (4% + 2rem));
+    width: 100%;
+    background-color: #fff;
 }
 
 main {
-    max-width: 960px;
 }
 
 .footer {

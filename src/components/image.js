@@ -19,14 +19,14 @@ const Image = () => (
       query {
         placeholderImage: file(relativePath: { eq: "running_family.webp" }) {
           childImageSharp {
-            fluid(maxWidth: 400) {
+            fluid(maxWidth: 700) {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <Img style={{maxWidth:'400px', minWidth: '200px'}} imgStyle={{maxWidth: '400px', minWidth: '200px', objectFit: 'cover'}} fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img style={{maxWidth:'700px', minWidth: '200px', }} imgStyle={{maxWidth: '700px', minWidth: '200px', objectFit: 'cover', paddingRight: '2em'}} fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 export default Image

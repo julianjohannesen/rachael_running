@@ -25,15 +25,15 @@ const Layout = ({ children }) => (
     	`}
 		render={data => (
 			<div className={style.wrapper}>
-				
-				<Header siteTitle={data.site.siteMetadata.title} />
-				
 				<div className={style.innerwrapper}>
-					<main>{children}</main>
-				</div>
+					<Header siteTitle={data.site.siteMetadata.title} />
+					
+					<div style={{flex:'1'}}>
+						<main>{children}</main>
+					</div>
 
-				<footer className={style.footer}>© {new Date().getFullYear()}, The Committee to Elect Rachael Running</footer>
-			
+					<footer className={style.footer}>© {new Date().getFullYear()}, The Committee to Elect Rachael Running</footer>
+				</div>
 			</div>
 		)}
 	/>

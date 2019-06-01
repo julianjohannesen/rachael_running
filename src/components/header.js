@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
 		<Link to="/about/">About Rachael</Link>
 		<Link to="/issues/">Issues</Link>
 		<Link to="/get-involved/">Get Involved</Link>
-		<Link to="https://secure.actblue.com/donate/rachaelformalden">DONATE</Link>
+		<a href="https://secure.actblue.com/donate/rachaelformalden" title="donate">DONATE</a>
 	</nav>
   </header>
 )

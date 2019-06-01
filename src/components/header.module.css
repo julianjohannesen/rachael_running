@@ -12,9 +12,6 @@
 }
 
 .logo {
-    width: 40vw;
-    min-width: 200px;
-    max-width: 400px;
 }
 
 .nav {
@@ -22,9 +19,6 @@
     flex-flow: row wrap;
     justify-content: flex-end;
     align-content: flex-start;
-
-    height: 4em;
-    width: 100vw;
     padding: 1rem;
 }
 
