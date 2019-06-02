@@ -1,26 +1,11 @@
-.hidden {
-    display:none;
-}
-
-.warning {
-    display: block;
-    color: red !important;
-}
-
 /* MODAL STYLES */
-
-/* // The gray background */
-.backdrop {
-    position: absolute;
-    top: 25vh;
-    bottom: 40vh;
-    left: 25vw;
-    right: 25vw;
-    padding: 2em;
-}
 
 /* // The modal "window" */
 .modal {
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+
     background-color: #1190b7;
     color: white;
     border-radius: 5px;
@@ -30,8 +15,41 @@
     padding: 2em;
 }
 
+.modal .wrapper {
+    margin: 0 auto;
+}
+
 .modal h2 {
     color: white;
+    text-align: center;
+}
+
+.telWrapper {
+    padding-bottom: 1em;
+}
+
+.telWrapper p {
+    display: inline;
+}
+
+.telWrapper input {
+    border: none;
+    width: 1.8em;
+    color: #808080;
+}
+
+p.hidden {
+    display:none !important;
+}
+
+p.warning {
+    display: block;
+    color: red !important;
+}
+
+.ward8 {
+    padding-bottom: .25em;
+    margin-bottom: .25em;
 }
 
 /* The modal close area */
@@ -45,6 +63,7 @@
 .btn1 {
     border: 3px solid #fff;
     color: #fff;
+    margin-left: 25% !important;
 }
 
 .btn1:hover, .btn1:active {
@@ -83,3 +102,4 @@
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
+

@@ -78,21 +78,37 @@ export default class ContactForm extends Component {
 
                     <input type="hidden" name="form-name" value="contact" />
 
-                    <p style={{ visibility: "hidden", width: '1px', height: '1px'}} >
+                    <p className={style.hidden} >
                         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                     </p>
                     <p>
-                        <label>Name: <input onChange={this.handleInputChange} type="text" name="name" required value={this.state.name} /></label>
+                        <label>Name:&nbsp;&nbsp;
+                            <input 
+                                onChange={this.handleInputChange} 
+                                type="text" 
+                                name="name" 
+                                required 
+                                value={this.state.name} 
+                            />
+                        </label>
                     </p>
                     <p>
-                        <label>Email: <input onChange={this.handleInputChange} type="email" name="email" value={this.state.email} required /></label>
+                        <label>Email:&nbsp;&nbsp;
+                            <input 
+                                onChange={this.handleInputChange} 
+                                type="email" 
+                                name="email" 
+                                value={this.state.email} 
+                                required 
+                            />
+                        </label>
                     </p>
-                    <div style={{ paddingBottom: "1em" }}>
-                        <p style={{ display: "inline" }}>
+                    <div className={style.telWrapper}>
+                        <p>
                             <label>Phone:&nbsp;&nbsp;
-                        <input
-                                    style={{ border: "none", width: "1.8em", color: "#808080" }}
+                                <input  
                                     type="text"
+                                    size="3"
                                     onChange={this.handleInputChange}
                                     pattern="[0-9]{3}"
                                     placeholder="111"
@@ -101,11 +117,11 @@ export default class ContactForm extends Component {
                                 />&nbsp;-&nbsp;
                             </label>
                         </p>
-                        <p style={{ display: "inline" }}>
+                        <p>
                             <label>
                                 <input
-                                    style={{ border: "none", width: "2em", color: "#808080" }}
                                     type="text"
+                                    size="3"
                                     onChange={this.handleInputChange}
                                     pattern="[0-9]{3}"
                                     placeholder="111"
@@ -114,10 +130,11 @@ export default class ContactForm extends Component {
                                 />-&nbsp;
                             </label>
                         </p>
-                        <p style={{ display: "inline" }}>
+                        <p>
                             <label>
                                 <input
-                                    style={{ border: "none", width: "3em", color: "#808080", }}
+                                    style={{width:"2.5em"}}
+                                    size="4"
                                     type="text"
                                     onChange={this.handleInputChange}
                                     pattern="[0-9]{4}"
@@ -129,7 +146,7 @@ export default class ContactForm extends Component {
                         </p>
                         <p className={this.state.valid ? style.hidden : style.warning}>Please complete your telephone number.</p>
                     </div>
-                    <p style={{marginBottom: '.25em'}}>
+                    <p className={style.ward8}>
                         <label>
                             <input
                                 onChange={this.handleInputChange}

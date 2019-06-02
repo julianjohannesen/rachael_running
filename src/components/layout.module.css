@@ -9,17 +9,23 @@
 }
 
 .innerwrapper {
-    /* sticky footer */
     flex: 1;
     padding: 2rem;
     width: 100%;
     background-color: #fff;
 }
 
-main {
+.mainWrapper {
+    flex: 1;
 }
 
 .footer {
     flex-shrink: 0;
     padding: 2rem;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
 }
