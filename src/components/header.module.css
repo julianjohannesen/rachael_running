@@ -3,16 +3,21 @@
     justify-content: space-between;
     background: #0080b2;
     
-    margin-bottom: 1.45rem;
-    padding: 1.5rem;
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
+    border-top: 1rem solid #1190b7;
+    border-bottom: 1rem solid #1190b7;
 }
 
 .titleLink, .titleLink:hover, .titleLink:active {
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
+.logo, .logo h1, .logo h1 img {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .nav {
@@ -40,8 +45,8 @@ a:hover {
     border-bottom: 3px solid white;
 }
 
-a:active{
-    border-bottom-color: #1190b7;
+a[aria-current="page"] {
+    border-bottom: 7px solid white;
 }
 
 .nav .donate {

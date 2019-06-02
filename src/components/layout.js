@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Banner from "./banner"
 import style from "./layout.module.css"
 
 const Layout = ({ children }) => (
@@ -21,6 +22,8 @@ const Layout = ({ children }) => (
 				<div className={style.innerwrapper}>
 					<Header siteTitle={data.site.siteMetadata.title} />
 					
+					<Banner />
+
 					<div className={style.mainWrapper}>
 						<main>{children}</main>
 					</div>
