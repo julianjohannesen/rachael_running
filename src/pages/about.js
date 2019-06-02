@@ -19,7 +19,7 @@ const SecondPage = () => (
 		</p>
 		​
 
-		<p>I am a proud union member (OPEIU Local 6) and have been a member of a union my entire working life. I believe in the power of unions to help create democratic workplaces and societies, and I bring this perspective to my campaign. I have dedicated my life to working for a better world through nonprofit policy, research, and communications work, and currently work as the communications coordinator for the Massachusetts AFL-CIO, which is the umbrella labor organization in the Commonwealth.
+		<p>I am a proud union member (OPEIU Local 6) and have been a member of a union my entire working life. I believe in democratic and engaged workplaces and societies, and I bring this perspective to my campaign. I have dedicated my life to working for a better world through nonprofit policy, research, and communications work, and currently work as the communications coordinator for the Massachusetts AFL-CIO, which is the umbrella labor organization in the Commonwealth.
 		</p>
 		​
 

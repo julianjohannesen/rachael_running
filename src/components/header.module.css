@@ -43,3 +43,20 @@ a:hover {
 a:active{
     border-bottom-color: #1190b7;
 }
+
+.nav .donate {
+    border: 3px solid #fff;
+    color: #fff;
+    background: rgb(226, 45, 149);
+    transition: all 0.3s;
+
+    padding: 1rem;
+}
+
+.nav .donate:hover, .donate:active {
+    color: rgba(226, 45, 149, 1);
+    background: #fff;
+}
+
+
+    
