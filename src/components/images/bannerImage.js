@@ -6,7 +6,7 @@ const Banner = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "rachael-banner.webp" }) {
+        placeholderImage: file(relativePath: { eq: "banner.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1100, quality: 90) {
               ...GatsbyImageSharpFluid

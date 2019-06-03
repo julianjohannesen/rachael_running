@@ -20,13 +20,19 @@
     padding: 0 !important;
 }
 
-.nav {
+.nav, .nav div {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-end;
     align-content: flex-start;
+
     padding: 1rem;
-    height: 2rem;
+    height: 4rem;
+}
+
+.nav div+div {
+    height: 6rem;
+    padding-left: 0;
 }
 
 a {
@@ -49,7 +55,8 @@ a[aria-current="page"] {
     border-bottom: 7px solid white;
 }
 
-.nav .donate {
+a.donate {
+    display: inline-block;
     border: 3px solid #fff;
     color: #fff;
     background: rgb(226, 45, 149);
@@ -58,7 +65,7 @@ a[aria-current="page"] {
     padding: 1rem;
 }
 
-.nav .donate:hover, .donate:active {
+a.donate:hover, a.donate:active {
     color: rgba(226, 45, 149, 1);
     background: #fff;
 }
