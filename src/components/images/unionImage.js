@@ -8,14 +8,14 @@ const UnionImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "rachael-fight.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 500, quality: 90) {
+            fluid(maxWidth: 600, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <Img style={{maxWidth:'500xp', minWidth: '200px', }} imgStyle={{maxWidth: '500px', minWidth: '200px', objectFit: 'cover', }} fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img style={{maxWidth:'600xp', minWidth: '300px', }} imgStyle={{maxWidth: '600px', minWidth: '300px', objectFit: 'cover', }} fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 export default UnionImage

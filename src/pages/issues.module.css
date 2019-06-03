@@ -1,0 +1,23 @@
+.priorities {
+    display: flex;
+
+    padding: 2rem;
+    background-color: #e8e8e8;
+}
+.priorities div {
+    width: 40%;
+}
+
+.priorities div+div {
+    width: 60%;
+}
+
+.issues {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.issues .border {
+    border-bottom: 2px solid rgb(226, 45, 149);
+}
