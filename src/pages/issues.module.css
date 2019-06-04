@@ -1,9 +1,3 @@
-@media screen and (min-width: 600px) {
-    .issues {
-        display: block;
-    }
-}
-
 .priorities {
     display: flex;
     flex-flow: row wrap;
@@ -40,5 +34,11 @@
 
 .issues .border {
     border-bottom: 2px solid rgb(226, 45, 149);
+}
+
+@media screen and (max-width: 600px) {
+    .issues {
+        display: block;
+    }
 }
 

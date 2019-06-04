@@ -18,4 +18,12 @@
 .logo, .logo h1, .logo h1 img {
     margin: 0 !important;
     padding: 0 !important;
+    /* will shrink to min-width if this is not set */
+    width: 100%;
+}
+
+@media screen and (max-width: 1050px){
+    .header {
+        flex-wrap: wrap;
+    }
 }
