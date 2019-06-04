@@ -1,0 +1,27 @@
+.footer {
+    flex-shrink: 0;
+    padding: 1rem;
+    padding-top: 0;
+
+    background: #0080b2;
+    color: white;
+}
+
+.nav {
+    font-size: 90%;
+}
+
+.link {
+    margin: 0;
+    margin-right: 0.8em;
+}
+
+.donateWrapper {
+    height: 3.2em;
+    line-height: 1;
+}
+
+.donate {
+    padding: 0.8em;
+}
+

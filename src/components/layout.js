@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer.js"
 import BannerImage from "./images/bannerImage"
 import style from "./layout.module.css"
 
@@ -28,7 +29,7 @@ const Layout = ({ children }) => (
 						<main>{children}</main>
 					</div>
 
-					<footer className={style.footer}>© {new Date().getFullYear()}, The Committee to Elect Rachael Running</footer>
+					<Footer />
 				</div>
 			</div>
 		)}

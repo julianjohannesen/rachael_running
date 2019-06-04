@@ -1,0 +1,46 @@
+.nav, .nav div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+
+    padding: 1rem;
+    height: 100%;
+}
+
+.link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+    margin: 0 1rem;
+}
+
+.link:hover {
+    border-bottom: 3px solid white;
+}
+
+.link[aria-current="page"] {
+    border-bottom: 7px solid white;
+}
+
+.donateWrapper {
+    height: 6em;
+    padding-left: 0;
+}
+
+.donate {
+    display: inline-block;
+    border: 3px solid #fff;
+    color: #fff;
+    background: rgb(226, 45, 149);
+    transition: all 0.3s;
+
+    padding: 1rem;
+}
+
+.donate:hover, .donate:active {
+    color: rgba(226, 45, 149, 1);
+    background: #fff;
+}

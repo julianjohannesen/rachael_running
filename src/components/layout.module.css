@@ -15,14 +15,6 @@
     padding-top: 2rem;
 }
 
-.footer {
-    flex-shrink: 0;
-    padding: 2rem;
-
-    background: #0080b2;
-    color: white;
-}
-
 .hidden {
     visibility: hidden;
     height: 1px;

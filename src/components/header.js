@@ -1,11 +1,11 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import PropTypes from "prop-types"
 
 import Logo from './images/logo.js'
 import style from './header.module.css'
+import Menu from './menu.js'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className={style.header}>
     <div className={style.logo}>
       <h1>
@@ -13,17 +13,7 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
     
-    <nav className={style.nav}>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/about/">About Rachael</Link>
-        <Link to="/issues/">Issues</Link>
-        <Link to="/get-involved/">Get Involved</Link>
-      </div>
-      <div>
-        <a className={style.donate} href="https://secure.actblue.com/donate/rachaelformalden" title="donate">DONATE</a>
-      </div>
-    </nav>
+    <Menu />
   </header>
 )
 
