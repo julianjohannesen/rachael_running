@@ -1,4 +1,4 @@
-.nav, .nav div {
+.nav, .menuWrapper, .donateWrapper {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
@@ -6,6 +6,13 @@
 
     padding: 1rem;
     height: 100%;
+}
+
+.menuWrapper {}
+
+.donateWrapper {
+    height: 6em;
+    padding-left: 0;
 }
 
 .link {
@@ -21,13 +28,8 @@
     border-bottom: 3px solid white;
 }
 
-.link[aria-current="page"] {
+.active {
     border-bottom: 7px solid white;
-}
-
-.donateWrapper {
-    height: 6em;
-    padding-left: 0;
 }
 
 .donate {
@@ -43,4 +45,25 @@
 .donate:hover, .donate:active {
     color: rgba(226, 45, 149, 1);
     background: #fff;
+}
+
+@media screen and (max-width: 1050px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+    .menuWrapper {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .donateWrapper {
+        padding: 1em;
+    }
+    .link {
+        margin: 0;
+        height: 2em;
+    }
+    .active::before {
+        content: '&#9655';
+    }
 }
