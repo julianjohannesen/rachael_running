@@ -15,7 +15,12 @@ const Banner = () => (
         }
       }
     `}
-    render={data => <Img style={{maxWidth:'1100px', minWidth: '600px', }} imgStyle={{maxWidth: '1100px', minWidth: '600px', objectFit: 'cover', }} fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img 
+        style={{maxWidth:'1100px', minWidth: '400px', }} 
+        imgStyle={{maxWidth: '1100px', minWidth: '400px', objectFit: 'cover', }} 
+        fluid={data.placeholderImage.childImageSharp.fluid} 
+        />
+    }
   />
 )
 export default Banner

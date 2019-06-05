@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer.js"
 import BannerImage from "./images/bannerImage"
-import style from "./layout.module.css"
+import { wrapper, innerWrapper, bannerImage, mainWrapper} from "./layout.module.css"
 
 const Layout = ({ children }) => (
 	<StaticQuery
@@ -19,13 +19,15 @@ const Layout = ({ children }) => (
       		}
     	`}
 		render={data => (
-			<div className={style.wrapper}>
-				<div className={style.innerwrapper}>
+			<div className={wrapper}>
+				<div className={innerWrapper}>
 					<Header siteTitle={data.site.siteMetadata.title} />
 					
-					<BannerImage />
+					<div className={bannerImage}>
+						<BannerImage />
+					</div>
 
-					<div className={style.mainWrapper}>
+					<div className={mainWrapper}>
 						<main>{children}</main>
 					</div>
 

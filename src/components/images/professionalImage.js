@@ -15,7 +15,10 @@ const ProfessionalImage = () => (
         }
       }
     `}
-    render={data => <Img style={{maxWidth:'350px', minWidth: '150px', }} imgStyle={{maxWidth: '350px', minWidth: '150px', objectFit: 'cover', }} fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img 
+        style={{maxWidth:'350px', minWidth: '150px', }} 
+        imgStyle={{maxWidth: '350px', minWidth: '150px', objectFit: 'cover', }} 
+        fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 export default ProfessionalImage

@@ -1,0 +1,20 @@
+.introWrapper {
+    display: flex;
+}
+
+.intro {
+    width: 67%;
+}
+
+.headshot {
+    width: 33%;
+}
+
+@media screen and (max-width: 500px) {
+    .intro {
+        width: 100%;
+    }
+    .headshot {
+        display: none;
+    }
+}
