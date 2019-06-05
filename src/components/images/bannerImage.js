@@ -16,6 +16,8 @@ const Banner = () => (
       }
     `}
     render={data => <Img 
+        alt="The Deveau-Running Family: Rachael, Sarah, and children."
+        title="The Deveau-Running Family: Rachael, Sarah, and children."
         style={{maxWidth:'1100px', minWidth: '400px', }} 
         imgStyle={{maxWidth: '1100px', minWidth: '400px', objectFit: 'cover', }} 
         fluid={data.placeholderImage.childImageSharp.fluid} 

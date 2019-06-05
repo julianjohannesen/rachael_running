@@ -26,7 +26,14 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img style={{maxWidth:'700px', minWidth: '200px', }} imgStyle={{maxWidth: '700px', minWidth: '200px', objectFit: 'cover', paddingRight: '2em'}} fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img 
+        alt="The Deveau-Running Family: Rachael, Sarah, and children."
+        title="The Deveau-Running Family: Rachael, Sarah, and children."
+        style={{maxWidth:'700px', minWidth: '200px', }} 
+        imgStyle={{maxWidth: '700px', minWidth: '200px', objectFit: 'cover', paddingRight: '2em'}} 
+        fluid={data.placeholderImage.childImageSharp.fluid} 
+      />
+    }
   />
 )
 export default Image

@@ -18,6 +18,8 @@ const UnionImage = () => (
     render={data => (
       // margin 0 auto is to center the photo when dropping from side by side to above and below.
       <Img 
+      alt="Rachael at a Fight for Fifteen Rally"
+      title="Rachael at a Fight for Fifteen Rally"
         style={{maxWidth:'600px', minWidth: '200px', margin: '0 auto'}} 
         imgStyle={{maxWidth: '600px', minWidth: '200px', objectFit: 'cover', }} 
         fluid={data.placeholderImage.childImageSharp.fluid} 

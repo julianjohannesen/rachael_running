@@ -16,6 +16,8 @@ const ProfessionalImage = () => (
       }
     `}
     render={data => <Img 
+      alt="Rachael Running"
+      title="Rachael Running"
         style={{maxWidth:'350px', minWidth: '150px', }} 
         imgStyle={{maxWidth: '350px', minWidth: '150px', objectFit: 'cover', }} 
         fluid={data.placeholderImage.childImageSharp.fluid} />}

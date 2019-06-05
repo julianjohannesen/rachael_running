@@ -16,7 +16,12 @@ class Modal extends React.Component {
                         {this.props.children}
                     </h2>
                     <div className={style.modalFooter}>
-                        <button className={style.btn + " " + style.btn1} onClick={this.props.onClose}>
+                        <button 
+                            className={style.btn + " " + style.btn1} 
+                            onClick={this.props.onClose}
+                            aria-label="Close modal."
+                            title="Close modal."
+                        >
                             Close
                         </button>
                     </div>

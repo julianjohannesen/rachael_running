@@ -71,67 +71,82 @@ export default class ContactForm extends Component {
                 <form
                     action="/"
                     name="contact"
+                    id="contact"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={this.handleSubmit}
+                    aria-label="Sign up for updates!"
+                    title="Sign for updates"
                 >
 
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input aria-label="Ignore this." type="hidden" name="form-name" value="contact"/>
 
                     <p className={style.hidden} >
-                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        <label htmlFor="bot-field">Don’t fill this out if you're human: <input id="bot-field" name="bot-field" aria-label="This is a honeypot to catch spam! Don't fill it out" /></label>
                     </p>
                     <p>
-                        <label>Name:&nbsp;&nbsp;
+                        <label htmlFor="name">Name:&nbsp;&nbsp;
                             <input 
                                 onChange={this.handleInputChange} 
                                 type="text" 
+                                id="name"
                                 name="name" 
                                 required 
+                                aria-label="Please provide your full name."
+                                title="Please provide your full name."
                                 value={this.state.name} 
                             />
                         </label>
                     </p>
                     <p>
-                        <label>Email:&nbsp;&nbsp;
+                        <label htmlFor="email">Email:&nbsp;&nbsp;
                             <input 
                                 onChange={this.handleInputChange} 
                                 type="email" 
                                 name="email" 
+                                id="email"
                                 value={this.state.email} 
+                                araiLabel="Please provide your email address."
+                                title="Please provide your email address."
                                 required 
                             />
                         </label>
                     </p>
                     <div className={style.telWrapper}>
                         <p>
-                            <label>Phone:&nbsp;&nbsp;
+                            <label htmlFor="phoneArea">Phone:&nbsp;&nbsp;
                                 <input  
                                     type="text"
                                     size="3"
+                                    id="phoneArea"
                                     onChange={this.handleInputChange}
                                     pattern="[0-9]{3}"
                                     placeholder="111"
                                     name="phoneArea"
+                                    aria-label="Please provide your area code."
+                                    title="Please provide your area code."
                                     value={this.state.phoneArea}
                                 />&nbsp;-&nbsp;
                             </label>
                         </p>
                         <p>
-                            <label>
+                            <label htmlFor="phonePrefix">
                                 <input
                                     type="text"
                                     size="3"
                                     onChange={this.handleInputChange}
                                     pattern="[0-9]{3}"
                                     placeholder="111"
+                                    id="phonePrefix"
                                     name="phonePrefix"
+                                    aria-label="Please provide the first 3 digits of your phone number."
+                                    title="Please provide the first 3 digits of your phone number."
                                     value={this.state.phonePrefix}
                                 />-&nbsp;
                             </label>
                         </p>
                         <p>
-                            <label>
+                            <label htmlFor="phoneLineNumber">
                                 <input
                                     style={{width:"2.5em"}}
                                     size="4"
@@ -140,6 +155,9 @@ export default class ContactForm extends Component {
                                     pattern="[0-9]{4}"
                                     placeholder="1111"
                                     name="phoneLineNumber"
+                                    id="phoneLineNumber"
+                                    aria-label="Please provide the last four digits of your phone number."
+                                    title="Please provide the last four digits of your phone number."
                                     value={this.state.phoneLineNumber}
                                 />
                             </label>
@@ -147,22 +165,24 @@ export default class ContactForm extends Component {
                         <p className={this.state.valid ? style.hidden : style.warning}>Please complete your telephone number.</p>
                     </div>
                     <p className={style.ward8}>
-                        <label>
+                        <label htmlFor="ward8">
                             <input
                                 onChange={this.handleInputChange}
                                 type="checkbox"
                                 name="ward8"
+                                id="ward8"
                                 value={this.state.isWard8}
                             />
                             &nbsp;I live in Malden Ward 8
                             </label>
                     </p>
                     <p>
-                        <label>
+                        <label htmlFor="volunteer">
                             <input
                                 onChange={this.handleInputChange}
                                 type="checkbox"
                                 name="volunteer"
+                                id="volunteer"
                                 value={this.state.isVolunteer}
                             />
                             &nbsp;Contact me about volunteering
@@ -171,7 +191,7 @@ export default class ContactForm extends Component {
                     </p>
 
                     <p>
-                        <button className={style.btn + " " + style.btn2} type="submit">Send</button>
+                        <button name="submit" id="submit" className={style.btn + " " + style.btn2} type="submit" aria-label="Submit" title="submit">Send</button>
                     </p>
                    
                 </form>
