@@ -22,6 +22,7 @@ export default class ContactForm extends Component {
         isVolunteer: false,
         valid: true,
         success: false,
+        forwardTo: '',
 
     }
 
@@ -37,6 +38,7 @@ export default class ContactForm extends Component {
 
     handleSubmit = event => {
         event.preventDefault();
+
         if (this.state.phoneArea || this.state.phonePrefix || this.state.phoneLineNumber) {
             if (!this.state.phoneArea || !this.state.phonePrefix || !this.state.phoneLineNumber) {
                 this.setState({ valid: false })
@@ -51,7 +53,14 @@ export default class ContactForm extends Component {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...this.state })
         })
-            .then(this.toggleModal())
+            .then(()=>{
+                console.log("The window inner width is: ", window.innerWidth)
+                if(window.innerWidth >= 600){
+                    this.toggleModal()
+                } else {
+                    console.log("Form posted.")
+                }
+            })
             .catch(error => console.warn(error));
 
     }
@@ -62,14 +71,25 @@ export default class ContactForm extends Component {
         });
     }
 
+
+    // As soon as the page loads, determine viewport width
+    // and set the form posting behavior
+    componentDidMount(){
+        console.log("component has mounted. inner width is: ", window.innerWidth)
+        this.setState({
+            forwardTo: window.innerWidth >= 600 ? "/" : "/success"
+        })
+    }
+
     render() {
+
         return (
             <React.Fragment>
                 <Modal show={this.state.success} onClose={this.toggleModal} >
                     Thank you! We'll be in touch.
                 </Modal>
                 <form
-                    action="/"
+                    action={this.state.forwardTo}
                     name="contact"
                     id="contact"
                     data-netlify="true"
@@ -106,7 +126,7 @@ export default class ContactForm extends Component {
                                 name="email" 
                                 id="email"
                                 value={this.state.email} 
-                                araiLabel="Please provide your email address."
+                                aria-label="Please provide your email address."
                                 title="Please provide your email address."
                                 required 
                             />

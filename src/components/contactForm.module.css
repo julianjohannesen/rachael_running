@@ -3,15 +3,15 @@
 /* // The modal "window" */
 .modal {
     position: absolute;
-    top: 25vh;
-    left: 25vw;
+    bottom: calc(20% - 150px);
+    left: calc(50% - 200px);
+    z-index: 9999;
 
     background-color: #1190b7;
     color: white;
     border-radius: 5px;
-    width: 50vw;
-    height: 35vh;
-    margin: 0 auto;
+    width: 400px;
+    height: 300px;;
     padding: 2em;
 }
 
@@ -63,7 +63,8 @@ p.warning {
 .btn1 {
     border: 3px solid #fff;
     color: #fff;
-    margin-left: 25% !important;
+    margin: 0 auto;
+    display: block;
 }
 
 .btn1:hover, .btn1:active {
@@ -92,7 +93,7 @@ p.warning {
     cursor: pointer;
     padding: 25px 80px;
     display: inline-block;
-    margin: 15px 30px;
+    margin: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
