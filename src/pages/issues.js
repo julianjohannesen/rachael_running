@@ -9,7 +9,7 @@ const Issues = () => (
 	<Layout>
 		<SEO title="Issues" />
 		<section className={style.priorities}>
-			<div>
+			<div className={style.fight}>
 				<UnionImage />
 			</div>
 			<div>

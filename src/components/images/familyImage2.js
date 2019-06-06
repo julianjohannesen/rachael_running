@@ -18,7 +18,7 @@ const FamilyImage2 = () => (
     render={data => <Img 
       	alt="The Deveau-Running Family: Rachael, Sarah, and children."
       	title="The Deveau-Running Family: Rachael, Sarah, and children."
-        style={{maxWidth:'400px', minWidth: '400px', float: 'right', margin: '1rem'}} 
+        style={{maxWidth:'400px', minWidth: '400px', margin: '0 auto'}} 
         imgStyle={{maxWidth: '400px', minWidth: '400px', objectFit: 'cover', }} 
         fluid={data.placeholderImage.childImageSharp.fluid} 
     />

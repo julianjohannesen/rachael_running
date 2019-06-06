@@ -3,13 +3,14 @@
     flex-flow: row wrap;
     justify-content: space-around;
 
+    min-width: 200px; 
     padding: 2rem;
     background-color: #e8e8e8;
+
 }
 
 .priorities>* {
-    flex: 1 1 400px;
-    min-width: 400px;
+    flex: 1 1 0;
 }
 
 .priorities>div {
@@ -39,6 +40,18 @@
 @media screen and (max-width: 600px) {
     .issues {
         display: block;
+    }
+    .issues div {
+        border-bottom: 2px solid rgb(226, 45, 149);
+    }
+    .issues div:last-child {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fight {
+        display: none;
     }
 }
 

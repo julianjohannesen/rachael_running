@@ -1,0 +1,10 @@
+.family2 {
+    float: right;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .family2 {
+        float: none;
+    }
+}

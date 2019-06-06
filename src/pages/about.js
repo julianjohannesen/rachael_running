@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import { family2 } from "./about.module.css"
 import SEO from "../components/seo"
 import FamilyImage2 from "../components/images/familyImage2"
 
@@ -14,8 +15,9 @@ const SecondPage = () => (
 		​
 
 		<h2>More about me</h2>
-		<FamilyImage2 />
-
+		<div className={family2}>
+			<FamilyImage2 />
+		</div>
 		<p>As the daughter of two educators, I have always understood the power of teachers to change lives. My wife, Sarah, and I have been together for 20 years and we love living in Malden and being a part of the public school community. We are inspired by the other families we have met through Linden and the amazing teachers who are incredibly dedicated to our children's success. Our neighborhood schools are places where parents and family members from all walks of life can come together to build a better community and world, and I hope my work on the school committee will help strengthen the voices of parents, teachers and students alike.
 		</p>
 		​
