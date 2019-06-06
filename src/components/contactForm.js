@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { navigate } from 'gatsby'
 import style from './contactForm.module.css'
 import Modal from './successModal'
 
@@ -59,6 +60,7 @@ export default class ContactForm extends Component {
                     this.toggleModal()
                 } else {
                     console.log("Form posted.")
+                    navigate("/success")
                 }
             })
             .catch(error => console.warn(error));
@@ -89,17 +91,16 @@ export default class ContactForm extends Component {
                     Thank you! We'll be in touch.
                 </Modal>
                 <form
-                    action={this.state.forwardTo}
+                   
                     name="contact"
                     id="contact"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={this.handleSubmit}
-                    aria-label="Sign up for updates!"
-                    title="Sign for updates"
+                   
                 >
 
-                    <input aria-label="Ignore this." type="hidden" name="form-name" value="contact"/>
+                    <input type="hidden" name="form-name" value="contact"/>
 
                     <p className={style.hidden} >
                         <label htmlFor="bot-field">Don’t fill this out if you're human: <input id="bot-field" name="bot-field" aria-label="This is a honeypot to catch spam! Don't fill it out" /></label>
