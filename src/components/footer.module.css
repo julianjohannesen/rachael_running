@@ -1,3 +1,4 @@
+
 .footer {
     flex-shrink: 0;
     padding: 1rem;
@@ -7,22 +8,96 @@
     color: white;
 }
 
-.nav {
+.nav, .menuWrapper, .donateWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+
+    height: 100%;
+    
+    padding: 1rem;
     font-size: 90%;
 }
 
-.link {
-    margin: 0;
-    margin-right: 0.8em;
-}
+.menuWrapper {}
 
 .donateWrapper {
     height: 3.2em;
+
+    padding-left: 0;
     line-height: 1;
 }
 
+.link {
+    display: block;
+    
+    margin: 0;
+    margin-right: 0.8em;
+    
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+
+.link:hover {
+    border-bottom: 3px solid white;
+}
+
+.active {
+    border-bottom: 7px solid white;
+}
+
 .donate {
-    padding: 0.8em;
+    display: inline-block;
+    
     height: 2.8em;
+    
+    padding: 0.8em;
+    border: 3px solid #fff;
+    color: #fff;
+    background: rgb(226, 45, 149);
+    transition: all 0.3s;
+}
+
+.donate:hover, .donate:active {
+    color: rgba(226, 45, 149, 1);
+    background: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        
+        height: 10em;
+    }
+    .menuWrapper {
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        height: 10em;
+
+        padding-top: 0;
+    }
+    .donateWrapper {
+        padding: 1em;
+        padding-top: 0;
+    }
+    .link {
+        margin: 0;
+        height: 2em;
+        color: white;
+    }
+    .link:hover {
+        color: #ffc029;
+        border-color: #ffc029;
+    }
+
 }
 

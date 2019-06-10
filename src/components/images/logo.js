@@ -17,9 +17,9 @@ const Logo = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "rachael-logo.png" }) {
+        placeholderImage: file(relativePath: { eq: "logo.png" }) {
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 350) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -29,8 +29,8 @@ const Logo = () => (
     render={data => <Img 
       alt="Rachael for Malden 2019"
       title="Rachael for Malden 2019"
-      style={{maxWidth: '600px', minWidth: '200px'}} 
-      imgStyle={{maxWidth: '600px', minWidth: '200px'}} 
+      style={{maxWidth: '350px', minWidth: '200px'}} 
+      imgStyle={{maxWidth: '350px', minWidth: '200px'}} 
       fluid={data.placeholderImage.childImageSharp.fluid} 
       />
     }

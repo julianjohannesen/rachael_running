@@ -1,69 +1,33 @@
 .nav, .menuWrapper, .donateWrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-content: flex-start;
-
-    padding: 1rem;
-    height: 100%;
+    z-index: 1;
 }
 
-.menuWrapper {}
+.menuWrapper {
+    z-index: 1;
+}
 
 .donateWrapper {
-    height: 6em;
-    padding-left: 0;
+    z-index: 1;
 }
 
 .link {
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    white-space: nowrap;
-    display: block;
-    margin: 0 1rem;
+    z-index: 1;
 }
 
 .link:hover {
-    border-bottom: 3px solid white;
+    z-index: 1;
 }
 
 .active {
-    border-bottom: 7px solid white;
+    z-index: 1;
 }
 
 .donate {
-    display: inline-block;
-    border: 3px solid #fff;
-    color: #fff;
-    background: rgb(226, 45, 149);
-    transition: all 0.3s;
-
-    padding: 1rem;
+    z-index: 1;
 }
 
 .donate:hover, .donate:active {
-    color: rgba(226, 45, 149, 1);
-    background: #fff;
+    z-index: 1;
 }
 
-@media screen and (max-width: 1050px) {
-    .nav {
-        flex-wrap: wrap;
-    }
-    .menuWrapper {
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: flex-end;
-    }
-    .donateWrapper {
-        padding: 1em;
-    }
-    .link {
-        margin: 0;
-        height: 2em;
-    }
-    .active::before {
-        content: '&#9655';
-    }
-}
+
