@@ -23,6 +23,12 @@
 }
 
 .burgerWrapper {
+    z-index: 3;
+    cursor: pointer;
+    height: 2.5em;
+}
+
+.burgerWrapper .burger {
     display:none;
     flex: 1 0 70px;
 
@@ -34,7 +40,7 @@
   
 }
 
-.burgerWrapper span {
+.burgerWrapper .burger span {
     display: block;
     width: 34px;
     margin: 7px 9px;
@@ -42,8 +48,26 @@
     transition: all .3s
 }
 
-.burgerWrapper:hover span {
+.burgerWrapper:hover .burger span,
+.burgerWrapper:hover .close {
+    color: #ffc029;
     border-color: #ffc029;
+}
+
+.burgerWrapper .close {
+    display: none;
+
+    width: 1.5em;
+    padding: 0.25em;
+    border: 1px solid #fff;
+    margin-right: 1em;
+    
+    color: #fff;
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    transition: all .3s;
 }
 
 .nav, .menuWrapper, .donateWrapper {
@@ -108,7 +132,7 @@
         top: 0;
         height: 100%;
         width: 100%;
-        z-index: 9999;
+        z-index: 2;
 
         font-size: 140%;
         background-color: rgba(0,0,0, 0.8);
@@ -136,6 +160,10 @@
     }
 
     .showBurger {
+        display: block !important;
+    }
+
+    .closeBurger {
         display: block !important;
     }
 

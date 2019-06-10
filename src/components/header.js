@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import cn from "classnames"
 
-import { header, logo, burgerWrapper, nav, menuWrapper, link, doanteWrapper, donate, showBurger } from './header.module.css'
+import { header, logo, burgerWrapper, burger, close, nav, menuWrapper, link, doanteWrapper, donate, showBurger, closeBurger } from './header.module.css'
 import Logo from './images/logo.js'
 import Menu from './menu.js'
 
@@ -26,7 +26,7 @@ class Header extends React.Component {
 	}
 
 
-	handleClick = (e) => {
+	handleClick = () => {
 		this.toggleBoth()
 	}
 
@@ -41,9 +41,13 @@ class Header extends React.Component {
 		// burgerClass is created with the classnames plugin. It allws me to use 
 		// 'showBurger' only when showBurgerLocalState is true. The same thing is
 		// done with menuClass and 'showMenu' and showMenuLocalState
-		const burgerClass = cn({
-			[burgerWrapper]: true,
+		const burgerShowBurger = cn({
+			[burger]: true,
 			[showBurger]: this.state.showBurgerLocalState,
+		})
+		const burgerCloseBurger = cn({
+			[close]: true,
+			[closeBurger]: this.state.showMenuLocalState,
 		})
 
    		return (
@@ -55,14 +59,17 @@ class Header extends React.Component {
 					</h1>
 				</div>
 
-				<div className={burgerClass} onClick={this.handleClick}>
-					<span></span>
-					<span></span>
-					<span></span>
+				<div className={burgerWrapper} onClick={this.handleClick}>
+					<div className={burgerCloseBurger}>X</div>
+					<div className={burgerShowBurger} >
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</div>
 				
-				{/*I call this prop 'classes' and destructure it in Menu. Note that
-				when using a component, you must classes to Menu.  */}
+				{/*I call this prop 'classes' and use it in Menu. Note that
+				when using a component, you must add classes to Menu.  */}
 				<Menu classes={{nav, menuWrapper, link, doanteWrapper, donate}} show={this.state.showMenuLocalState} />
 
 			</header>
