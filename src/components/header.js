@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import cn from "classnames"
 
-import { header, logo, burgerWrapper, burger, close, nav, menuWrapper, link, doanteWrapper, donate, showBurger, closeBurger } from './header.module.css'
+import { header, logo, burgerWrapper, burger, close, nav, menuWrapper, link, donateWrapper, donate, showBurger, closeBurger, social } from './header.module.css'
 import Logo from './images/logo.js'
 import Menu from './menu.js'
 
@@ -70,7 +70,7 @@ class Header extends React.Component {
 				
 				{/*I call this prop 'classes' and use it in Menu. Note that
 				when using a component, you must add classes to Menu.  */}
-				<Menu classes={{nav, menuWrapper, link, doanteWrapper, donate}} show={this.state.showMenuLocalState} />
+				<Menu classes={{nav, menuWrapper, link, donateWrapper, donate, social}} show={this.state.showMenuLocalState} />
 
 			</header>
 		)

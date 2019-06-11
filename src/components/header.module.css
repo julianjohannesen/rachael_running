@@ -80,11 +80,13 @@
     height: 100%;
 }
 
-.menuWrapper {}
+.menuWrapper {
+    padding: 0;
+}
 
 .donateWrapper {
-    height: 6em;
-    padding-left: 0;
+    height: 4em;
+    padding: 0;
 }
 
 .link {
@@ -118,6 +120,10 @@
 .donate:hover, .donate:active {
     color: rgba(226, 45, 149, 1);
     background: #fff;
+}
+
+.social {
+    display: none !important;
 }
 
 @media screen and (max-width: 1050px) {
@@ -165,6 +171,10 @@
 
     .closeBurger {
         display: block !important;
+    }
+
+    .social {
+        display: flex !important;
     }
 
 }

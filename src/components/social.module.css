@@ -1,0 +1,32 @@
+.social {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 5em;
+    width: 8em;
+}
+
+.social a {
+    flex: 1 1 64px;
+    
+    padding: 0.5em;
+}
+
+.social .fb:hover {
+    filter: hue-rotate(37deg) brightness(200%);
+}
+
+.social .tw:hover {
+    filter: hue-rotate(63deg);
+}
+
+.social img {
+    min-width: 64px;
+    transition: all .3s
+}
+
+.social img+img {
+    padding: 0;
+}
