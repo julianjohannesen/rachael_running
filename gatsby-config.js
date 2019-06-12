@@ -6,7 +6,8 @@ module.exports = {
     description: `I am Rachael Running and I am running for Malden School Committee in Ward 8. I am passionate about our city and our public schools. As a mother of two, I am dedicated to the success of our schools. When our children succeed, Malden succeeds.`,
     author: `@rachael4malden`,
     twHandle: `@rachael4malden`,
-    fbHandle: `rachaelformalden`
+    fbHandle: `rachaelformalden`,
+    donationLink: `https://secure.actblue.com/donate/rachaelformalden`,
   },
 
   // Plugins

@@ -1,27 +1,27 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import BackgroundImage from 'gatsby-background-image'
 
-const Banner = () => (
+const Banner = ({children}) => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "banner.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "running-family.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1100, quality: 90) {
+            fluid(maxWidth: 3600, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <Img 
-        alt="The Deveau-Running Family: Rachael, Sarah, and children."
-        title="The Deveau-Running Family: Rachael, Sarah, and children."
-        style={{maxWidth:'1100px', minWidth: '400px', }} 
-        imgStyle={{maxWidth: '1100px', minWidth: '400px', objectFit: 'cover', }} 
+    render={data => <BackgroundImage 
+        Tag="section" 
+        style={{height:'40em'}}
         fluid={data.placeholderImage.childImageSharp.fluid} 
-        />
+      >
+        {children}
+      </BackgroundImage>
     }
   />
 )

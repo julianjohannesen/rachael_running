@@ -1,8 +1,10 @@
 import React from 'react'
-import { useStaticQuery } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import cn from 'classnames'
-import Facebook from '../images/facebook.svg'
-import Twitter from '../images/twitter.svg'
+
+import Facebook from '../../images/facebook.svg'
+import Twitter from '../../images/twitter.svg'
+
 import { social, fb, tw } from './social.module.css'
 
 export default function Social({classes={}}) {

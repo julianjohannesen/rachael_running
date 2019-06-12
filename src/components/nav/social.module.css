@@ -4,13 +4,11 @@
     align-items: center;
     justify-content: space-between;
 
-    height: 5em;
-    width: 8em;
+    width: 7em;
 }
 
 .social a {
     flex: 1 1 64px;
-    
     padding: 0.5em;
 }
 

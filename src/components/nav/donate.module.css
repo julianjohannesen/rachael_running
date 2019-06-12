@@ -1,0 +1,17 @@
+.donateWrapper {
+    padding: 1em;
+}
+
+.donate {
+    padding: 0.5em;
+    border: 3px solid #fff;
+    
+    color: #fff;
+    background: rgb(226, 45, 149);
+    transition: all 0.3s;
+}
+
+.donate:hover, .donate:active {
+    color: rgba(226, 45, 149, 1);
+    background: #fff;
+}

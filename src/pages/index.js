@@ -1,30 +1,28 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import ProfessionalImage from "../components/images/professionalImage"
 import SEO from "../components/seo"
-import ContactForm from "../components/contactForm"
-import { introWrapper, intro, headshot } from "./index.module.css"
+import Banner from '../components/images/bannerImage'
+import Logo from '../components/images/logo'
+//import ContactForm from "../components/contactForm"
+import { introWrapper, intro } from "./index.module.css"
 
 
 const IndexPage = () => (
 	<Layout>
 		<SEO title="Home" />
-		<div className={introWrapper}>
-			<div className={intro}>
-				<h2 style={{marginTop: 0}}>I am Rachael Running and I am running for Malden School Committee in Ward 8.</h2>
-				<p style={{paddingRight: "4%", }}> I am passionate about our city and our public schools. As a mother of two, I am dedicated to the success of our schools. When our children succeed, Malden succeeds.</p>
-				<h2>Sign up for updates!</h2>
-				<ContactForm />
-			</div>
+		<Banner className={introWrapper}>
+			
+				<Logo />
+				<div className={intro} style={{ padding: '2em 3em', marginTop: '8em', color: '#fff', backgroundColor: 'rgba(0,0,0,.5)' }}>
+					<h2 style={{ fontSize: '200%', color: '#fff' }}>My name is Rachael Running and I'm running for Malden School Committee in Ward 8.</h2>
+					<p style={{ fontSize: '125%' }}>I am passionate about our city and our public schools. As a mother of two, I am dedicated to the success of our schools. When our children succeed, Malden succeeds.</p>
+				</div>	
 
-			<div className={headshot}>
-				<ProfessionalImage />
-			</div>
-
-		</div>
-
+		</Banner>
 	</Layout>
 )
 
 export default IndexPage
+
+// <ContactForm />
