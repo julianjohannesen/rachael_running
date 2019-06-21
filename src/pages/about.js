@@ -1,19 +1,27 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import { family2 } from "./about.module.css"
+import { intro, family2, moreSection } from "./about.module.css"
 import SEO from "../components/seo"
 import FamilyImage2 from "../components/images/familyImage2"
+import AboutBanner from "../components/images/aboutBanner"
+import Logo from "../components/images/logo"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="About Rachael" />
-    <h1>Welcome</h1>
-    
-		<p>I am excited to be running for Malden School Committee in Ward 8. My daughter, Willa, is in 1st grade at Linden and my son, Luca, will be entering kindergarten there this fall. For me, the success of our schools is personal. But no matter who we are or what issues we face, everyone in Malden is touched by our schools and we all know that when our children succeed, Malden succeeds.
-		</p>
-		​
+	<SEO title="About Rachael" />
 
+	<AboutBanner>
+		<Logo />
+		<div className={intro}>
+			<h2>Welcome</h2>
+		
+			<p>I am excited to be running for Malden School Committee in Ward 8. My daughter, Willa, is in 1st grade at Linden and my son, Luca, will be entering kindergarten there this fall. For me, the success of our schools is personal. But no matter who we are or what issues we face, everyone in Malden is touched by our schools and we all know that when our children succeed, Malden succeeds.
+			</p>
+		</div>
+	</AboutBanner>
+
+	<section className={moreSection}>
 		<h2>More about me</h2>
 		<div className={family2}>
 			<FamilyImage2 />
@@ -27,7 +35,7 @@ const SecondPage = () => (
 		​
 
 		<p>I am proud to call Malden my home and I am excited to have the opportunity to earn your vote for School Committee in Ward 8. I welcome your ideas and input - please don’t hesitate to reach out. Together we can win for Malden! </p>
-
+	</section>
   </Layout>
 )
 

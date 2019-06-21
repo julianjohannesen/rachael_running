@@ -1,3 +1,67 @@
+.wrapper .formTitle {
+    text-align: center;
+    font-size: 180%;
+}
+
+.wrapper form section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+    padding: 1em;
+}
+
+.wrapper p {
+    margin-right: 1em;
+}
+
+.telWrapper {
+    padding-bottom: 1em;
+    margin-right: 1em;
+}
+
+.telWrapper p {
+    display: inline;
+    margin: 0;
+}
+
+.telWrapper input {
+    border: none;
+    color: #808080;
+}
+
+p.hidden {
+    display:none !important;
+}
+
+p.warning {
+    display: block;
+    color: red !important;
+}
+
+.wv p {
+    margin-bottom: 0;
+}
+
+/* send button */
+.sendBtn {
+    display: block !important;
+
+    padding: .5em !important;
+    border: 3px solid #e22e96;
+    margin: .5em auto !important;
+    
+    color: #e22e96;
+    transition: all 0.3;
+}
+
+.sendBtn:hover, .sendBtn:active {
+    color: #fff;
+    background: #e22e96;
+}
+
 /* MODAL STYLES */
 
 /* // The modal "window" */
@@ -24,34 +88,6 @@
     text-align: center;
 }
 
-.telWrapper {
-    padding-bottom: 1em;
-}
-
-.telWrapper p {
-    display: inline;
-}
-
-.telWrapper input {
-    border: none;
-    width: 2.5em;
-    color: #808080;
-}
-
-p.hidden {
-    display:none !important;
-}
-
-p.warning {
-    display: block;
-    color: red !important;
-}
-
-.ward8 {
-    padding-bottom: .25em;
-    margin-bottom: .25em;
-}
-
 /* The modal close area */
 .modalFooter {
     width: 100%;
@@ -70,20 +106,6 @@ p.warning {
 .btn1:hover, .btn1:active {
     color: #0e83cd;
     background: #fff;
-}
-
-.btn2 {
-    border: 3px solid #0e83cd;
-    color:#0e83cd;
-
-    padding: .5em !important;
-    margin: .5em !important;
-    margin-left: 0 !important;
-}
-
-.btn2:hover, .btn2:active {
-    color: #fff;
-    background: #0e83cd;
 }
 
 .btn {

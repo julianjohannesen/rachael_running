@@ -7,13 +7,19 @@ import Donate from './donate'
 import Social from './social'
 
 class Menu extends React.Component {
+
+	state = {
+		showMenu: false,
+	}
+
+	toggleMenu = () => this.setState({showMenu: !this.state.showMenu})
 	
 	render(){
 		return (
 			<nav className={nav}>
 				
-				<Burger />
-				<div className={menuWrapper}>
+				<Burger toggleMenu={this.toggleMenu}/>
+				<div className={menuWrapper} style={this.state.showMenu ? {display: "flex",} : {display: "none",}}>
 					<MenuItems classes={{}}/>
 					<Donate />
 					<Social/>

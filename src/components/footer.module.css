@@ -1,11 +1,17 @@
 
 .footer {
-    flex-shrink: 0;
+    /* The parent container is innerWrapper and it is
+    set to display flex. mainWrapper is footer's 
+    sibling. It's set to flex: 1 0 auto */
+    flex: 0 0 auto;
     padding: 1rem;
-    padding-top: 0;
 
-    background: #0080b2;
+    background: #000;
     color: white;
+}
+
+.footer h2 {
+    color: #fff;
 }
 
 .nav, .menuWrapper, .donateWrapper {

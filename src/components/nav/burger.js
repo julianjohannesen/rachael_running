@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { burgerWrapper, burger, burgerCloser } from './burger.module.css'
+import cn from 'classnames'
+import { burgerWrapper, burger, burgerCloser, round } from './burger.module.css'
 
 export default class Burger extends Component {
 
@@ -11,6 +12,7 @@ export default class Burger extends Component {
         this.setState({
             showBurger: !this.state.showBurger,
         })
+        this.props.toggleMenu()
     }
 
     render() {
@@ -18,13 +20,13 @@ export default class Burger extends Component {
         return (
             <div className={burgerWrapper} onClick={this.handleClick}>
 				
-				<div className={burger} style={ showBurger ? {display: 'block'} : {display: 'none'} }>
+				<div className={cn(burger, round)} style={ showBurger ? {display: 'block'} : {display: 'none'} }>
 					<span></span>
 					<span></span>
 					<span></span>
                 </div>
                 
-                <div className={burgerCloser} style={ showBurger ? {display: 'none'} : {display: 'block'} }>X</div>
+                <div className={cn(burgerCloser, round)} style={ showBurger ? {display: 'none'} : {display: 'block'} }>X</div>
 
 			</div>
         )

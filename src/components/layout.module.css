@@ -1,28 +1,43 @@
+/* The footer is not sticky right now */
+
+/* The layout now contains div.wrapper -> div.innerWrapper -> 
+div.mainWrapper -> main -> section.gatsby-image-wrapper. That
+last is for background image. Within div.innerWrapper, 
+div.mainWrapper and footer.footer are siblings. */
+
+/* div.wrapper only contains div.innerWrapper */
 .wrapper {
-    background-color: #1190b7;
+    background-color: black;
+
 }
 
+/* The inner wrapper contains the main wrapper and the footer
+as siblings. */
 .innerWrapper {
-    flex: 1;
-    max-width: 1100px;
-    background-color: #fff;
+    /* Display flex to allow a sticky footer */
+    display: flex;
+    flex-flow: column nowrap;
+
+    max-width: 1300px;
     margin: 0 auto;
+
+    background-color: #fff;
 }
 
+/* div.mainWrapper contains the main element, which in turn
+contains section.gatsby-image-wrapper. Inside that section
+are div.gatsby-image-wrapper for the logo and div.intro 
+as siblings. */
 .mainWrapper {
-    flex: 1;
-    padding: 1.5rem;
-    padding-top: 2rem;
+    flex: 1 0 auto;
+    padding: 0;
+    margin: 0;
 }
+
+
 
 .hidden {
     visibility: hidden;
     height: 1px;
     width: 1px;
-}
-
-@media screen and (max-width: 500px) {
-    .bannerImage {
-        display: none;
-    }
 }

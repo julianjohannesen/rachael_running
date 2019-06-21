@@ -2,11 +2,11 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
-const Banner = ({children}) => (
+const IssuesBanner = ({children}) => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "running-family.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "rachael-fight.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1600, quality: 90) {
               ...GatsbyImageSharpFluid
@@ -28,4 +28,4 @@ const Banner = ({children}) => (
     }
   />
 )
-export default Banner
+export default IssuesBanner
