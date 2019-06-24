@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { navigate } from 'gatsby'
 import style from './contactForm.module.css'
-import Modal from './successModal'
+//import Modal from './successModal'
 
 // See this post: https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/#form-handling-with-static-site-generators 
 // See esp the part of stateful react forms
@@ -23,7 +23,7 @@ export default class ContactForm extends Component {
         isVolunteer: false,
         valid: true,
         success: false,
-        forwardTo: '',
+        forwardTo: 'success',
 
     }
 
@@ -55,49 +55,48 @@ export default class ContactForm extends Component {
             body: encode({ "form-name": "contact", ...this.state })
         })
             .then(()=>{
-                console.log("The window inner width is: ", window.innerWidth)
-                if(window.innerWidth >= 600){
-                    this.toggleModal()
-                } else {
+                // console.log("The window inner width is: ", window.innerWidth)
+                // if(window.innerWidth >= 600){
+                //     this.toggleModal()
+                // } else {
                     console.log("Form posted.")
                     navigate("/success")
-                }
+                //}
             })
             .catch(error => console.warn(error));
 
     }
 
-    toggleModal = () => {
-        this.setState({
-            success: !this.state.success
-        });
-    }
+    // toggleModal = () => {
+    //     this.setState({
+    //         success: !this.state.success
+    //     });
+    // }
 
 
     // As soon as the page loads, determine viewport width
     // and set the form posting behavior
-    componentDidMount(){
-        console.log("component has mounted. inner width is: ", window.innerWidth)
-        this.setState({
-            forwardTo: window.innerWidth >= 600 ? "/" : "/success"
-        })
-    }
+    // componentDidMount(){
+    //     console.log("component has mounted. inner width is: ", window.innerWidth)
+    //     this.setState({
+    //         // forwardTo: window.innerWidth >= 600 ? "/" : "/success"
+    //         forwardTo: "/success"
+    //     })
+    // }
 
     render() {
 
         return (
             <React.Fragment>
-                <Modal show={this.state.success} onClose={this.toggleModal} >
+                {/*<Modal show={this.state.success} onClose={this.toggleModal} >
                     Thank you! We'll be in touch.
-                </Modal>
-                <form
-                   
+        </Modal>*/}
+                <form           
                     name="contact"
                     id="contact"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={this.handleSubmit}
-                   
                 >
 
                     <input type="hidden" name="form-name" value="contact"/>
@@ -212,7 +211,15 @@ export default class ContactForm extends Component {
                     </p>
 
                     <p>
-                        <button name="submit" id="submit" className={style.btn + " " + style.btn2} type="submit" aria-label="Submit" title="submit">Send</button>
+                        <button 
+                            name="submit" 
+                            id="submit" 
+                            className={style.btn + " " + style.btn2} 
+                            type="submit" 
+                            aria-label="Submit" 
+                            title="submit"
+                        >Send
+                        </button>
                     </p>
                    
                 </form>
