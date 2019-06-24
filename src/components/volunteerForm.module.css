@@ -1,0 +1,128 @@
+.wrapper .formTitle {
+    text-align: center;
+    font-size: 180%;
+}
+
+.wrapper form section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+    padding: 1em;
+}
+
+.wrapper p {
+    margin-right: 1em;
+}
+
+.telWrapper {
+    padding-bottom: 1em;
+    margin-right: 1em;
+}
+
+.telWrapper p {
+    display: inline;
+    margin: 0;
+}
+
+.telWrapper input {
+    border: none;
+    color: #808080;
+}
+
+p.hidden {
+    display:none !important;
+}
+
+p.warning {
+    display: block;
+    color: red !important;
+}
+
+.wv p {
+    margin-bottom: 0;
+}
+
+/* send button */
+.sendBtn {
+    display: block !important;
+
+    padding: .5em !important;
+    border: 3px solid #e22e96;
+    margin: .5em auto !important;
+    
+    color: #e22e96;
+    transition: all 0.3;
+}
+
+.sendBtn:hover, .sendBtn:active {
+    color: #fff;
+    background: #e22e96;
+}
+
+/* MODAL STYLES */
+
+/* // The modal "window" */
+.modal {
+    position: absolute;
+    bottom: calc(20% - 150px);
+    left: calc(50% - 200px);
+    z-index: 9999;
+
+    background-color: #1190b7;
+    color: white;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;;
+    padding: 2em;
+}
+
+.modal .wrapper {
+    margin: 0 auto;
+}
+
+.modal h2 {
+    color: white;
+    text-align: center;
+}
+
+/* The modal close area */
+.modalFooter {
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+}
+
+/* close button */
+.btn1 {
+    border: 3px solid #fff;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn1:hover, .btn1:active {
+    color: #0e83cd;
+    background: #fff;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
