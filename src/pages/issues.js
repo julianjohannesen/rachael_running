@@ -13,7 +13,7 @@ const Issues = () => (
 			<Logo />
 
 				<div className={intro}>
-					<h1>My Priorities</h1>
+					<h2>My Priorities</h2>
 					<p>
 					If elected, my first priority as a school committee member would be to listen to the community - to parents, teachers and the greater Malden community. I will be receptive, accessible and transparent. I believe our public education system should be democratically run and that parents, students and teachers should have a voice and feel empowered and engaged.</p>
 				</div>

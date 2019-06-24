@@ -11,8 +11,8 @@ export default function MenuItems({classes={}}) {
             <Link className={cn(link, classes.link)} activeClassName="active" to="/">Home</Link>
             <Link className={cn(link, classes.link)} activeClassName="active" to="/about">About Rachael</Link>
             <Link className={cn(link, classes.link)} activeClassName="active" to="/issues">Issues</Link>
+            <Link className={cn(link, classes.link)} activeClassName="active" to="/endorsements">Endorsements</Link>
             <Link className={cn(link, classes.link)} activeClassName="active" to="/get-involved">Get Involved</Link>
-            
         </React.Fragment>
     )
 }
