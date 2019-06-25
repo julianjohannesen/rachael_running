@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { navigate } from 'gatsby'
 import style from './volunteerForm.module.css'
-import Modal from './successModal'
 
 // See this post: https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/#form-handling-with-static-site-generators 
 // See esp the part of stateful react forms
@@ -15,6 +14,10 @@ export default class VolunteerForm extends Component {
 
     state = {
         name: '',
+        street: '',
+        city: '',
+        state: '',
+        zip: '',
         email: '',
         phoneArea: '',
         phonePrefix: '',
@@ -23,7 +26,6 @@ export default class VolunteerForm extends Component {
         isVolunteer: false,
         valid: true,
         success: false,
-
     }
 
     handleInputChange = event => {
@@ -51,7 +53,7 @@ export default class VolunteerForm extends Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
+            body: encode({ "form-name": "volunteer", ...this.state })
         })
             .then(() => {
                 console.log("Form posted.")
@@ -84,19 +86,79 @@ export default class VolunteerForm extends Component {
                     <section>
 
                         <p>
-                            <label htmlFor="name">Name:&nbsp;&nbsp;
-                            <input
-                                    onChange={this.handleInputChange}
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    required
-                                    aria-label="Please provide your full name."
-                                    title="Please provide your full name."
-                                    value={this.state.name}
-                                />
+                            <label htmlFor="name">
+                                Name:&nbsp;&nbsp;
+                                <input
+                                        onChange={this.handleInputChange}
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        required
+                                        aria-label="Please provide your full name."
+                                        title="Please provide your full name."
+                                        value={this.state.name}
+                                    />
                             </label>
                         </p>
+
+                        <section className="address">
+                            <p><label htmlFor="street">
+                                Street:&nbsp;&nbsp;
+                                <input 
+                                    type="text" 
+                                    name="street"
+                                    id="street"
+                                    onChange={this.handleInputChange} 
+                                    required
+                                    aria-label="Please provide your street address. Not your mailing address."
+                                    title="Please provide your street address. Not your mailing address."
+                                    value={this.state.street} />
+                            </label></p>
+
+                            <p><label htmlFor="city">
+                                City:&nbsp;&nbsp;
+                                <input 
+                                    type="text" 
+                                    name="city"
+                                    id="city" 
+                                    onChange={this.handleInputChange}
+                                    required
+                                    aria-label="Please provide your city."
+                                    title="Please provide your city."
+                                    value={this.state.city} />
+                            </label></p>
+                            
+                            <p><label htmlFor="state">
+                                State:&nbsp;&nbsp;
+                                <input 
+                                    type="text" 
+                                    name="state"
+                                    id="state" 
+                                    size="2"
+                                    onChange={this.handleInputChange}
+                                    pattern="[a-zA-Z]{2}"
+                                    required 
+                                    aria-label="Please provide your state."
+                                    title="Please provide your state."
+                                    value={this.state.state}/>
+                            </label></p>
+                            
+                            <p><label htmlFor="zip">
+                                Zip:&nbsp;&nbsp;
+                                <input 
+                                    type="text" 
+                                    name="zip"
+                                    id="zip" 
+                                    size="5"
+                                    onChange={this.handleInputChange}
+                                    pattern="[0-9]{5}"
+                                    required 
+                                    aria-label="Please provide your zip code."
+                                    title="Please provide your full zip code."
+                                    value={this.state.zip}/>
+                            </label></p>  
+                        </section>
+
                         <p>
                             <label htmlFor="email">Email:&nbsp;&nbsp;
                             <input

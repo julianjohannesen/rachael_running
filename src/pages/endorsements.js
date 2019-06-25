@@ -15,7 +15,7 @@ const Endorsements = () => (
 				<div className={intro}>
 					<h2>Endorsements</h2>
 					<p>
-					I'm proud to have been endorsed by the follow organizations and individuals.</p>
+					I'm proud to have been endorsed by the following organizations and individuals.</p>
 				</div>
 			
 		</IssuesBanner>

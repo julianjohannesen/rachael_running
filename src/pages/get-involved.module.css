@@ -26,7 +26,8 @@
 .volunteer {
     background-color: rgba(126,128,189, .5);
     padding: 1em;
-    width: 50%;
+    min-width: 300px;
+    max-width: 50%;
 }
 
 .volunteer h3 {
@@ -39,4 +40,10 @@
     background-color: #fff;
     padding: 1.2em;
     width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+    .volunteer {
+        max-width: 100% !important;
+    }
 }
