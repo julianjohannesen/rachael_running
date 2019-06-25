@@ -23,12 +23,20 @@
     padding: 1.5em;
 }
 
-.message, .form {
+.volunteer {
+    background-color: rgba(126,128,189, .5);
+    padding: 1em;
+    width: 50%;
+}
 
+.volunteer h3 {
+    margin-top: 1em;
+    
+    color: rgba(100,85,100, 1)
 }
 
 .address {
-    background-color: lightgrey;
+    background-color: #fff;
     padding: 1.2em;
-    width: 25em;
+    width: 100%;
 }

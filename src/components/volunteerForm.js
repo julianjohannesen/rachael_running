@@ -23,7 +23,6 @@ export default class VolunteerForm extends Component {
         isVolunteer: false,
         valid: true,
         success: false,
-        forwardTo: '',
 
     }
 
@@ -55,50 +54,25 @@ export default class VolunteerForm extends Component {
             body: encode({ "form-name": "contact", ...this.state })
         })
             .then(() => {
-                console.log("The window inner width is: ", window.innerWidth)
-                if (window.innerWidth >= 600) {
-                    this.toggleModal()
-                } else {
-                    console.log("Form posted.")
-                    navigate("/success")
+                console.log("Form posted.")
+                navigate("/success")
                 }
-            })
+            )
             .catch(error => console.warn(error));
-
-    }
-
-    toggleModal = () => {
-        this.setState({
-            success: !this.state.success
-        });
-    }
-
-    // As soon as the page loads, determine viewport width
-    // and set the form posting behavior
-    componentDidMount() {
-        console.log("component has mounted. inner width is: ", window.innerWidth)
-        this.setState({
-            forwardTo: window.innerWidth >= 600 ? "/" : "/success"
-        })
     }
 
     render() {
 
         return (
             <div className={style.wrapper}>
-            
-                <Modal show={this.state.success} onClose={this.toggleModal} >
-                    Thank you! We'll be in touch.
-                </Modal>
+    
                 <h2 className={style.formTitle}>{this.props.formTitle}</h2>
                 <form
-
                     name="volunteer"
                     id="volunteer"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={this.handleSubmit}
-
                 >
 
                     <input type="hidden" name="form-name" value="contact" />

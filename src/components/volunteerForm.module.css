@@ -1,6 +1,12 @@
+.wrapper {
+    padding: 1em;
+    width: 50%;
+}
+
 .wrapper .formTitle {
     text-align: center;
     font-size: 180%;
+
 }
 
 .wrapper form section {
