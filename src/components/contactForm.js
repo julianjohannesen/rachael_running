@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { navigate } from 'gatsby'
-import style from './contactForm.module.css'
-//import Modal from './successModal'
+import { wrapper, hidden, telWrapper, wv, ward8 } from './contactForm.module.css'
 
 // See this post: https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/#form-handling-with-static-site-generators 
 // See esp the part of stateful react forms
@@ -22,8 +21,7 @@ export default class ContactForm extends Component {
         isWard8: false,
         isVolunteer: false,
         valid: true,
-        success: false,
-
+        success: false
     }
 
     handleInputChange = event => {
@@ -48,11 +46,13 @@ export default class ContactForm extends Component {
                 this.setState({ valid: true })
             }
         }
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
-        })
+        fetch("/", 
+            {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact", ...this.state })
+            }
+            )
             .then(() => {
                 console.log("Form posted.");
                 navigate("/success");
@@ -64,6 +64,7 @@ export default class ContactForm extends Component {
     render() {
 
         return (
+            <div className={wrapper}>
             <form
                 name="contact"
                 id="contact"
@@ -74,7 +75,7 @@ export default class ContactForm extends Component {
 
                 <input type="hidden" name="form-name" value="contact" />
 
-                <p className={style.hidden} >
+                <p className={hidden} >
                     <label htmlFor="bot-field">
                         Don’t fill this out if you're human: 
                         <input 
@@ -114,7 +115,7 @@ export default class ContactForm extends Component {
                         </label>
                     </p>
 
-                    <div className={style.telWrapper}>
+                    <div className={telWrapper}>
                         <p>
                             <label htmlFor="phoneArea">Phone:&nbsp;&nbsp;
                                 <input
@@ -166,8 +167,8 @@ export default class ContactForm extends Component {
                         <p className={this.state.valid ? style.hidden : style.warning}>Please complete your telephone number.</p>
                     </div>
 
-                    <div className={style.wv}>
-                        <p className={style.ward8}>
+                    <div className={wv}>
+                        <p className={ward8}>
                             <label htmlFor="ward8">
                                 <input
                                     onChange={this.handleInputChange}
@@ -207,6 +208,7 @@ export default class ContactForm extends Component {
                 </p>
 
             </form>
+            </div>
 
         )
     }

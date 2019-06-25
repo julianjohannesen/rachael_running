@@ -69,6 +69,7 @@ export default class VolunteerForm extends Component {
             <div className={style.wrapper}>
     
                 <h2 className={style.formTitle}>{this.props.formTitle}</h2>
+                
                 <form
                     name="volunteer"
                     id="volunteer"
