@@ -1,0 +1,49 @@
+.intro {
+    height: 100%;
+    width: 100%;
+    padding: 2em 3em;
+    margin-top: 8em; 
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+}
+
+.intro h2 {
+    font-size: 200%;
+    color: #fff;
+}
+
+.intro p {
+    font-size: 125%;
+}
+
+.more {
+    display: flex;
+    flex-flow: row wrap;
+    
+    padding: 1.5em;
+}
+
+.volunteer {
+    background-color: rgba(126,128,189, .5);
+    padding: 1em;
+    min-width: 300px;
+    max-width: 50%;
+}
+
+.volunteer h3 {
+    margin-top: 1em;
+    
+    color: rgba(100,85,100, 1)
+}
+
+.address {
+    background-color: #fff;
+    padding: 1.2em;
+    width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+    .volunteer {
+        max-width: 100% !important;
+    }
+}

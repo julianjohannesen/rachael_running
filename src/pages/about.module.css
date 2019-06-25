@@ -1,3 +1,29 @@
+.introWrapper {
+    z-index: inherit;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    padding: 2em 3em;
+    margin-top: 8em; 
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+}
+
+.intro h2 {
+    font-size: 200%;
+    color: #fff;
+}
+
+.intro p {
+    font-size: 125%;
+}
+
+.moreSection {
+    padding: 1.5em;
+}
+
 .family2 {
     float: right;
     margin: 1rem;

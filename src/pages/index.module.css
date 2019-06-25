@@ -1,20 +1,26 @@
+/* This alternate layout creates a lot of unnecessary elements.
+The layout now contains an outer wrapper, inner wrapper, 
+and main wrapper. That's all before getting to the background
+image container. */
+
 .introWrapper {
-    display: flex;
+    z-index: inherit;
 }
 
 .intro {
-    width: 67%;
+    height: 100%;
+    width: 100%;
+    padding: 2em 3em;
+    margin-top: 8em; 
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
 }
 
-.headshot {
-    width: 33%;
+.intro h2 {
+    font-size: 200%;
+    color: #fff;
 }
 
-@media screen and (max-width: 500px) {
-    .intro {
-        width: 100%;
-    }
-    .headshot {
-        display: none;
-    }
+.intro p {
+    font-size: 125%;
 }

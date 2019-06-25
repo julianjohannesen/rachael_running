@@ -13,11 +13,11 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Logo = () => (
+const LogoBack = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "logo-alpha.png" }) {
+        placeholderImage: file(relativePath: { eq: "logo.png" }) {
           childImageSharp {
             fluid(maxWidth: 350) {
               ...GatsbyImageSharpFluid
@@ -29,11 +29,11 @@ const Logo = () => (
     render={data => <Img 
       alt="Rachael for Malden 2019"
       title="Rachael for Malden 2019"
-      style={{maxWidth: '350px', minWidth: '200px', backgroundColor: 'rgba(256,256,256,0.5)'}} 
+      style={{maxWidth: '350px', minWidth: '200px', backgroundColor: 'rgba(256,256,256,0.5)', margin: '1em auto'}} 
       imgStyle={{maxWidth: '350px', minWidth: '200px'}} 
       fluid={data.placeholderImage.childImageSharp.fluid} 
       />
     }
   />
 )
-export default Logo
+export default LogoBack

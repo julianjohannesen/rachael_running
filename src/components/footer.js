@@ -1,14 +1,15 @@
 import React from "react"
-import Menu from "./menu"
-
-import { footer, nav, menuWrapper, link, donateWrapper, donate } from "./footer.module.css"
+import { footer, copyright, logo } from "./footer.module.css"
+import ContactForm from './contactForm'
+import LogoBack from "./images/logo-original"
 
 const Footer = () => (
     <footer className={footer}>
-        <Menu classes={{nav, menuWrapper, link, donateWrapper, donate}} show={true} />
-        <div>
+        <ContactForm formTitle={'Sign up for updates!'}/>
+        <div className={copyright}>
             © {new Date().getFullYear()}, The Committee to Elect Rachael Running
         </div>
+        <LogoBack className={logo} />
     </footer>
 )
 

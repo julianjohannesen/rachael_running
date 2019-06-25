@@ -1,29 +1,23 @@
-.priorities {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-
-    min-width: 200px; 
-    padding: 2rem;
-    background-color: #e8e8e8;
-
+.intro {
+    height: 100%;
+    width: 100%;
+    padding: 2em 3em;
+    margin-top: 8em; 
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
 }
 
-.priorities>* {
-    flex: 1 1 0;
+.intro h2 {
+    font-size: 200%;
+    color: #fff;
 }
 
-.priorities>div {
-    padding-bottom: 1.5rem;
-    
+.intro p {
+    font-size: 125%;
 }
 
-.priorities div+div {
-    padding-left: 1rem;
-}
-
-.priorities h1 {
-    margin-top: 0 !important;
+.issuesWrapper {
+    padding: 1.5em;
 }
 
 .issues {

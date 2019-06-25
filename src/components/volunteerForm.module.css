@@ -1,6 +1,13 @@
+.wrapper {
+    padding: 1em;
+    min-width: 300px;
+    max-width: 50%;
+}
+
 .wrapper .formTitle {
     text-align: center;
     font-size: 180%;
+
 }
 
 .wrapper form section {
@@ -11,6 +18,11 @@
 
 
     padding: 1em;
+}
+
+.address {
+    padding: 0;
+    margin: 0;
 }
 
 .wrapper p {
@@ -28,8 +40,6 @@
 }
 
 .telWrapper input {
-    border: none;
-    color: #808080;
 }
 
 p.hidden {
@@ -78,5 +88,11 @@ p.warning {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+@media screen and (max-width: 680px) {
+    .wrapper {
+        max-width: 100% !important;
+    }
 }
 
