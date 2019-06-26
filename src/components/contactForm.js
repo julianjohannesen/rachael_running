@@ -178,7 +178,7 @@ export default class ContactForm extends Component {
                                     value={this.state.isWard8}
                                 />
                                 &nbsp;I live in Malden Ward 8
-                                </label>
+                            </label>
                         </p>
                         <p>
                             <label htmlFor="volunteer">
@@ -204,11 +204,11 @@ export default class ContactForm extends Component {
                         aria-label="Submit"
                         title="submit"
                     >Send
-                        </button>
+                    </button>
                 </p>
 
             </form>
-            </div>
+        </div>
 
         )
     }
