@@ -26,7 +26,7 @@ const GetInvolved = () => (
 					<li>Donate, either through the "donate" button above or by sending a check to: <address className={address}>The Committee to Elect Rachael Running<br/>51 Bellvale St, <br/>Malden, MA 02148.</address></li>
 				</ul>
 			</div>
-			{/*<VolunteerForm />*/}
+			<VolunteerForm formTitle={"I want to volunteer!"} />
 		</section>
 
 		

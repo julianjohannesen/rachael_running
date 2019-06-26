@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { navigate } from 'gatsby'
-import { wrapper, hidden, telWrapper, wv, ward8 } from './contactForm.module.css'
+import { wrapper, formTitle, hidden, telWrapper, wv, ward8, warning, btn, sendBtn } from './contactForm.module.css'
+import cn from 'classnames'
 
 // See this post: https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/#form-handling-with-static-site-generators 
 // See esp the part of stateful react forms
@@ -65,6 +66,7 @@ export default class ContactForm extends Component {
 
         return (
             <div className={wrapper}>
+            <h2 className={formTitle}>{this.props.formTitle}</h2>
             <form
                 name="contact"
                 id="contact"
@@ -164,7 +166,7 @@ export default class ContactForm extends Component {
                                 />
                             </label>
                         </p>
-                        <p className={this.state.valid ? style.hidden : style.warning}>Please complete your telephone number.</p>
+                        <p className={this.state.valid ? hidden : warning}>Please complete your telephone number.</p>
                     </div>
 
                     <div className={wv}>
@@ -199,7 +201,7 @@ export default class ContactForm extends Component {
                     <button
                         name="submit"
                         id="submit"
-                        className={style.btn + " " + style.btn2}
+                        className={cn(btn, sendBtn)}
                         type="submit"
                         aria-label="Submit"
                         title="submit"
