@@ -23,7 +23,7 @@ export default class VolunteerForm extends Component {
         phonePrefix: '',
         phoneLineNumber: '',
         isWard8: false,
-        isVolunteer: false,
+        message: '',
         valid: true,
         success: false,
     }
@@ -237,12 +237,29 @@ export default class VolunteerForm extends Component {
                                         id="ward8"
                                         value={this.state.isWard8}
                                     />
-                                    &nbsp;I live in Malden Ward 8
+                                    &nbsp;I live in Malden Ward 8 (<a href="http://www.sec.state.ma.us/wheredoivotema//bal/MyElectionInfo.aspx" title="Find my ward">Find my ward</a>)
                                 </label>
                             </p>
                         </div>
 
                     </section>
+
+                    <p>
+                        <label htmlFor="message">
+                            Add a message&nbsp;&nbsp;
+                            <textarea
+                                    onChange={this.handleInputChange}
+                                    rows="5"
+                                    columns="50"
+                                    id="message"
+                                    name="message"
+                                    aria-label="Add a message."
+                                    title="Add a message."
+                                    value={this.state.message}
+                                />
+                        </label>
+                    </p>
+
                     <p>
                         <button name="submit" id="submit" className={style.btn + " " + style.sendBtn} type="submit" aria-label="Submit" title="submit">Send</button>
                     </p>

@@ -55,6 +55,10 @@ p.warning {
     margin-bottom: 0;
 }
 
+.wrapper textarea {
+    width: 100%;
+}
+
 /* send button */
 .sendBtn {
     display: block !important;

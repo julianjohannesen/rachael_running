@@ -179,7 +179,7 @@ export default class ContactForm extends Component {
                                     id="ward8"
                                     value={this.state.isWard8}
                                 />
-                                &nbsp;I live in Malden Ward 8
+                                &nbsp;I live in Malden Ward 8<br/>(<a href="http://www.sec.state.ma.us/wheredoivotema//bal/MyElectionInfo.aspx" title="Find my ward">Find my ward</a>)
                             </label>
                         </p>
                         <p>

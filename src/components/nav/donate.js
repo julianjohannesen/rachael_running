@@ -1,20 +1,20 @@
 import React from 'react'
 import cn from 'classnames'
-import { useStaticQuery, graphql } from 'gatsby'
+//import { useStaticQuery, graphql } from 'gatsby'
 
 import { donateWrapper, donate } from './donate.module.css'
 
 export default function Donate({ classes={} }) {
 
-    const donationLink = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    donationLink
-                }
-            }
-        }
-    `)
+    // const donationLink = useStaticQuery(graphql`
+    //     query {
+    //         site {
+    //             siteMetadata {
+    //                 donationLink
+    //             }
+    //         }
+    //     }
+    // `)
     
     return (
         <div className={cn(donateWrapper, classes.donateWrapper)}>
