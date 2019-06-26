@@ -6,13 +6,14 @@ theme.overrideThemeStyles = ({ rhythm }, options) => ({
       textShadow: "none",
       backgroundImage: "none"
     },
+
     'p, a' : {
         fontFamily: '"Roboto", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" '
     },
     "h1,h2,h3,h4,h5,h6": {
       marginTop: `${rhythm(1.5)}`,
       marginBottom: `${rhythm(0.5)}`,
-      color: '#0e83cd',
+      color: '#333',
     }
   })
 

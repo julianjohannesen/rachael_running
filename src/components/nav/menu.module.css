@@ -34,6 +34,26 @@
     
 }
 
+.election {
+
+    margin-bottom: 5em;
+
+    text-align: center;
+    color: white;
+    line-height: 1.2;
+    font-size: 90%;
+}
+
+.electionDate {
+    font-size: 150%;
+}
+
+.election a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
 @media screen and (min-width: 1300px){
     .nav {
         width: 1300px !important;
