@@ -20,9 +20,9 @@ class Menu extends React.Component {
 				
 				<Burger toggleMenu={this.toggleMenu}/>
 				<div className={menuWrapper} style={this.state.showMenu ? {display: "flex",} : {display: "none",}}>
-					<MenuItems classes={{}}/>
+					<MenuItems />
 					<Donate />
-					<Social/>
+					<Social />
 				</div>
 
 			</nav>

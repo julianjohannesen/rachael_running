@@ -81,7 +81,7 @@ export default class ContactForm extends Component {
                         <input 
                             id="bot-field" 
                             name="bot-field" 
-                            aria-label="This is a honeypot to catch spam! Don't fill it out" />
+                            aria-label="Don't fill this out" />
                     </label>
                 </p>
 
