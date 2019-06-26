@@ -18,7 +18,7 @@ export default function Donate({ classes={} }) {
     
     return (
         <div className={cn(donateWrapper, classes.donateWrapper)}>
-			<a className={cn(donate, classes.donate)} href={donationLink} title="donate">DONATE</a>
+			<a className={cn(donate, classes.donate)} href="https://secure.actblue.com/donate/rachaelformalden" title="donate">DONATE</a>
         </div>
     )
 }
