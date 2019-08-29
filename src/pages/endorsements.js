@@ -15,21 +15,20 @@ const Endorsements = () => (
 				<div className={intro}>
 					<h2>Endorsements</h2>
 					<p>
-					I'm proud to have been endorsed by the following organizations and individuals.</p>
+					I'm proud to have been endorsed by the following organizations.</p>
 				</div>
 			
 		</IssuesBanner>
 
 		<section className={issuesWrapper}>
+			<h2>Greater Boston Labor Council</h2>
+			<h2>International Brotherhood of Electrical Workers (IBEW), Local 2222</h2>
+			<h2>Laborer's Local 22</h2>
+			<h2>Our Revolution Malden</h2>
+			<h2>Painters and Allied Trades DC #35</h2>
+			<h2>Roofer’s Local 33</h2>
             <h2>Sheet Metal Workers' International Association Local Union No 17</h2>
-            <h2>
-            Roofer’s Local 33</h2>
-            <h2>
-            United Food and Commercial Workers (UFCW), Local 1445</h2>
-            <h2>
-            Painters and Allied Trades DC #35</h2>
-            <h2>
-            International Brotherhood of Electrical Workers (IBEW), Local 2222</h2>
+            <h2>United Food and Commercial Workers (UFCW), Local 1445</h2>
 			
 			
 		</section>
