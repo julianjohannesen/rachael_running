@@ -24,8 +24,8 @@ class Menu extends React.Component {
 					<Donate />
 					<Social />
 
-					<p className={election}>Preliminary Election will be held<br />
-					<span className={electionDate}>Tuesday, September 17th, 2019</span><br />
+					<p className={election}>General Election will be held<br />
+					<span className={electionDate}>Tuesday, November 5th, 2019</span><br />
 					(<a href="http://www.sec.state.ma.us/WhereDoIVoteMA/bal/MyElectionInfo.aspx" title="Where do I vote?">Where do I vote?</a>)</p>
 
 				</div>
