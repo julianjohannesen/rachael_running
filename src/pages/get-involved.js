@@ -21,7 +21,7 @@ const GetInvolved = () => (
 			<div className={volunteer}>
 				<h3>Here are a few of the things that you could do to help Rachael.</h3>
 				<ul>
-					<li>Knock on your neightbors' doors</li>
+					<li>Knock on your neighbors' doors</li>
 					<li>Make phone calls</li>
 					<li>Donate, either through the "donate" button above or by sending a check to: <address className={address}>The Committee to Elect Rachael Running<br/>51 Bellvale St, <br/>Malden, MA 02148.</address></li>
 				</ul>
