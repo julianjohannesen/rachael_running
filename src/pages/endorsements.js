@@ -23,6 +23,7 @@ const Endorsements = () => (
 		<section className={issuesWrapper}>
 			<h2>Our Revolution Malden</h2>
 			<h2>Greater Boston Labor Council</h2>
+			<h2>Massachusetts Alliance for Retired Americans</h2>
 			<h2>International Brotherhood of Electrical Workers (IBEW), Local 2222</h2>
 			<h2>Laborer's Local 22</h2>
 			<h2>Painters and Allied Trades DC #35</h2>
