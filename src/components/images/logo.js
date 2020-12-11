@@ -29,8 +29,12 @@ const Logo = () => (
     render={data => <Img 
       alt="Rachael for Malden 2019"
       title="Rachael for Malden 2019"
-      style={{maxWidth: '350px', minWidth: '200px', backgroundColor: 'rgba(256,256,256,0.5)'}} 
-      imgStyle={{maxWidth: '350px', minWidth: '200px'}} 
+      style={{
+        maxWidth: '350px', 
+        minWidth: '200px', 
+        //backgroundColor: 'rgba(256,256,256,0.5)'
+      }} 
+      imgStyle={{maxWidth: '350px', minWidth: '200px', visibility: 'hidden'}} 
       fluid={data.placeholderImage.childImageSharp.fluid} 
       />
     }

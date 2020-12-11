@@ -14,7 +14,7 @@ const IndexPage = () => (
 			
 				<Logo />
 				<div className={intro}>
-					<h2>My name is Rachael Running and I'm running for Malden School Committee in Ward 8.</h2>
+					<h2>My name is Rachael Running</h2>
 					<p>I am passionate about our city and our public schools. As a mother of two, I am dedicated to the success of our schools. When our children succeed, Malden succeeds. (<Link to="about">more</Link>)</p>
 				</div>	
 

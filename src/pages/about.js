@@ -16,7 +16,7 @@ const SecondPage = () => (
 		<div className={intro}>
 			<h2>Welcome</h2>
 		
-			<p>I am excited to be running for Malden School Committee in Ward 8. My daughter, Willa, is in 2nd grade at Linden and my son, Luca, just entered kindergarten there this fall. For me, the success of our schools is personal. But no matter who we are or what issues we face, everyone in Malden is touched by our schools and we all know that when our children succeed, Malden succeeds.
+			<p>My childen, Willa and Luca, are in 3rd and 1st grade at Linden. For me, the success of our schools is personal. But no matter who we are or what issues we face, everyone in Malden is touched by our schools and we all know that when our children succeed, Malden succeeds.
 			</p>
 		</div>
 	</AboutBanner>
@@ -34,7 +34,7 @@ const SecondPage = () => (
 		</p>
 		​
 
-		<p>I am proud to call Malden my home and I am excited to have the opportunity to earn your vote for School Committee in Ward 8. I welcome your ideas and input - please don’t hesitate to reach out. Together we can win for Malden! </p>
+		<p>I am proud to call Malden my home! </p>
 	</section>
   </Layout>
 )
