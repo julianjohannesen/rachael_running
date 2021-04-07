@@ -21,12 +21,12 @@ class Menu extends React.Component {
 				<Burger toggleMenu={this.toggleMenu}/>
 				<div className={menuWrapper} style={this.state.showMenu ? {display: "flex", height: "100%"} : {display: "none",}}>
 					<MenuItems />
-					{/* <Donate /> */}
+					{<Donate />}
 					<Social />
 
-					{/* <p className={election}>General Election will be held<br />
+					{<p className={election}>General Election will be held<br />
 					<span className={electionDate}>Tuesday, November 5th, 2019</span><br />
-					(<a href="http://www.sec.state.ma.us/WhereDoIVoteMA/bal/MyElectionInfo.aspx" title="Where do I vote?">Where do I vote?</a>)</p> */}
+					(<a href="http://www.sec.state.ma.us/WhereDoIVoteMA/bal/MyElectionInfo.aspx" title="Where do I vote?">Where do I vote?</a>)</p> }
 
 				</div>
 

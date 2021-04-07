@@ -8,7 +8,7 @@ import AboutBanner from "../components/images/aboutBanner"
 import Logo from "../components/images/logo"
 
 const SecondPage = () => (
-  <Layout>
+<Layout>
 	<SEO title="About Rachael" />
 
 	<AboutBanner>
@@ -36,7 +36,7 @@ const SecondPage = () => (
 
 		<p>I am proud to call Malden my home! </p>
 	</section>
-  </Layout>
+</Layout>
 )
 
 export default SecondPage
