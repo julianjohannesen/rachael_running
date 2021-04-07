@@ -52,5 +52,8 @@
   },
   "bugs": {
     "url": "https://github.com/julianjohannesen/rachael_running/issues"
+  },
+  "engines" : {
+    "node" : ">=12.13.0"
   }
 }
