@@ -5,9 +5,9 @@ import LogoBack from "./images/logo-original"
 
 const Footer = () => (
     <footer className={footer}>
-        {<ContactForm formTitle={'Sign up for updates!'}/> }
+        <ContactForm formTitle={'Sign up for updates!'}/>
         <div className={copyright}>
-            { © {new Date().getFullYear()}, The Committee to Elect Rachael Running }
+            Copyright {new Date().getFullYear()}, The Committee to Elect Rachael Running
         </div>
         {<LogoBack className={logo} />}
     </footer>

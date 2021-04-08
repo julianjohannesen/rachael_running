@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { navigate } from 'gatsby'
-import style from './volunteerForm.module.css'
+import * as style from './volunteerForm.module.css'
 
 // See this post: https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/#form-handling-with-static-site-generators 
 // See esp the part of stateful react forms

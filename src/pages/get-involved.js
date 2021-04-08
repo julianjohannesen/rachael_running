@@ -7,7 +7,7 @@ import Logo from "../components/images/logo"
 import Volunteer from "../components/images/volunteer";
 
 const GetInvolved = () => (
-  <Layout>
+<Layout>
 	<SEO title="Get Involved" />
 		<Volunteer>
 			<Logo />
@@ -29,7 +29,7 @@ const GetInvolved = () => (
 			{<VolunteerForm formTitle={"I want to volunteer!"} /> }
 		</section>
 		
-  </Layout>
+</Layout>
 )
 
 export default GetInvolved

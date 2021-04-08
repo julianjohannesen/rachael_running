@@ -6,14 +6,14 @@ import Banner from './images/bannerImage'
 
 class Header extends React.Component {
 
- 	render(){
+	render(){
 
-   		return (
+		return (
 			<header className={header}>
 				<Banner />
 			</header>
 		)
-   	}
+	}
 }
 
 export default Header

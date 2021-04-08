@@ -2,7 +2,7 @@ import React from "react"
 
 import Menu from './nav/menu'
 import Footer from "./footer.js"
-import { wrapper, innerWrapper, mainWrapper} from "./layout.module.css"
+import { wrapper, innerWrapper, mainWrapper } from "./layout.module.css"
 
 const Layout = ({ children }) => {
 	
