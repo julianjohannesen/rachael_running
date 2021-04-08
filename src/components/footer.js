@@ -1,6 +1,10 @@
 import React from "react"
-import { footer, copyright, logo } from "./footer.module.css"
-import ContactForm from './contactForm'
+import { 
+    footer, 
+    // copyright, 
+    // logo 
+} from "./footer.module.css"
+// import ContactForm from './contactForm'
 import LogoBack from "./images/logo-original"
 
 const Footer = () => (
