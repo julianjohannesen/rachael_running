@@ -34,7 +34,11 @@ const Logo = () => (
         minWidth: '200px', 
         backgroundColor: 'rgba(256,256,256,0.5)'
       }} 
-      imgStyle={{maxWidth: '350px', minWidth: '200px', visibility: 'hidden'}} 
+      imgStyle={{
+        maxWidth: '350px',
+        minWidth: '200px',
+        //visibility: 'hidden'
+      }} 
       fluid={data.placeholderImage.childImageSharp.fluid} 
       />
     }

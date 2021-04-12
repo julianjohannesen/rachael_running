@@ -16,7 +16,7 @@ const Banner = ({children}) => (
       }
     `}
     // Under 900px vw, I get cropping on the right side
-    // Over 900px vw the image size increses and I get cropping at the top
+    // Over 900px vw the image size increases and I get cropping at the top
     // Right now, 900-1300px vw looks pretty good.
     render={data => <BackgroundImage 
         Tag="section" 
